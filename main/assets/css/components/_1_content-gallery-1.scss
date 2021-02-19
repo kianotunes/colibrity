@@ -1,0 +1,40 @@
+/* -------------------------------- 
+
+File#: _1_content-gallery-1
+
+-------------------------------- */
+.content-gallery-1 {
+
+    .adv-gallery__img {
+        object-fit: cover;
+        flex-basis: 0;
+    }
+
+    .gallery-link-v1 {
+        position: relative;
+        display: flex;
+
+        p {
+            position: absolute;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26px;
+            bottom: 45px;
+            left: 25px;
+        }
+    }
+
+    .gallery-link {
+        position: relative;
+        display: flex;
+
+        p {
+            position: absolute;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26px;
+            bottom: 25px;
+            left: 25px;
+        }
+    }
+}
