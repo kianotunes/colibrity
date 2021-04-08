@@ -2,13 +2,13 @@
 
 ```
 npm install
-npm watch
+gulp watch
 ```
 
 <p>Команда для финальной сборки проекта:</p>
 
 ```
-npm build
+gulp build
 ```
 
 <p>Папка build - структура проекта для разработки</p>
