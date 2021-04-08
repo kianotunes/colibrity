@@ -1,14 +1,14 @@
 {
-  "name": "centrofinans",
+  "name": "demotask",
   "version": "1.0.0",
-  "description": "Frontend for centrofinans",
+  "description": "Frontend demotask",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kianotunes/demotask"
+    "url": "git+https://github.com/kianotunes/colibrity"
   },
   "keywords": [
     "twig",
