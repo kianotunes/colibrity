@@ -1,7 +1,7 @@
 {
-  "name": "demotask",
+  "name": "demotask colibrity",
   "version": "1.0.0",
-  "description": "Frontend demotask",
+  "description": "Frontend demotask for colibrity",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
