@@ -132,26 +132,23 @@ function watchFiles() {
 // Таск для main.min.css (включёна очистка неиспользованных стилей + минификация)
 function purgeCSS() {
   return src([paths.css + 'main.css'])
-    .pipe(sourcemaps.init())
     .pipe(purgecss({
       content: ['build/*.html', paths.js + 'scripts.js'],
       safelist: ['.is-hidden', '.is-visible', /open$/],
+	  safelist: {deep: [/js$/]},
       defaultExtractor: content => content.match(/[\w-/:%@]+(?<!:)/g) || []
     }))
     .pipe(cleanCSS( { level: { 1: { specialComments: 0 } } } ))
     .pipe(rename({suffix: '.min'}))
-    .pipe(sourcemaps.write('.'))
     .pipe(dest([paths.distCSS]));
 }
 
 // Таск для scripts.min.js
 function minifyJs() {
 	return src([paths.js + 'scripts.js'])
-  .pipe(sourcemaps.init())
   .pipe(terser({format: {quote_style: 1}}))
   .pipe(rename({suffix: '.min'}))
-  .pipe(sourcemaps.write('.'))
-	.pipe(dest([paths.distJS]));
+  .pipe(dest([paths.distJS]));
 }
 
 // Таск для переноса html
